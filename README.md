@@ -18,17 +18,45 @@ The main workflow includes:
 - dynamic pricing and price elasticity modelling
 - system-level evaluation
 
-## Datasets
+## Datasets Included
 
-This project uses two public electricity consumption datasets:
+## Data Availability
 
-1. I-BLEND dataset  
-   Used as the main case study for hostel-level group load analysis.
+The raw datasets are not included in this repository due to file size and redistribution considerations. Please download the datasets from their official sources and place the required CSV files in the corresponding analysis folders.
 
-2. UNICON dataset  
-   Used as a supplementary robustness check with building-level submeter electricity data.
+### I-BLEND Dataset
 
-The raw datasets are not included in this repository due to file size and dataset redistribution considerations. Please download the datasets from their official sources and place them in the project folder before running the scripts.
+I-BLEND is used as the main hostel-level case study.
+
+Official dataset collection:  
+https://springernature.figshare.com/collections/I-BLEND_a_campus_scale_commercial_and_residential_buildings_electrical_energy_dataset/3893581
+
+Energy dataset download page:  
+https://springernature.figshare.com/articles/dataset/Energy_dataset_of_IIITD/6007637
+
+Related paper:  
+https://www.nature.com/articles/sdata201915
+
+Required files:
+- `boys_hostel_mains.csv`
+- `girls_hostel_mains.csv`
+
+Place these files in the `I-BLEND_analysis/` folder before running the code.
+
+### UNICON Dataset
+
+UNICON is used as a supplementary robustness check with building-level electricity data.
+
+Kaggle dataset page:  
+https://www.kaggle.com/datasets/cdaclab/unicon
+
+GitHub dataset page:  
+https://github.com/CDAC-lab/UNICON
+
+Required file:
+- `building_submeter_consumption.csv`
+
+Place this file in the `UNICON_analysis/` folder before running the code.
 
 ## Main Files
 
